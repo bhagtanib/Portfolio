@@ -1,0 +1,65 @@
+.container {
+  height: 80vh;
+  display: grid;
+  grid-template-rows: 6fr 3fr;
+}
+.top {
+  background: rgb(1, 192, 173);
+  background: linear-gradient(
+    167deg,
+    rgba(1, 192, 173, 1) 20%,
+    rgba(0, 221, 199, 1) 46%
+  );
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0% 100%);
+  color: white;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 5vh, 6vh);
+}
+.topContent {
+  margin-top: 80px;
+  text-align: center;
+}
+.navigateTop {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #161a1d;
+
+  justify-content: center;
+}
+.socialLinks img {
+  cursor: pointer;
+  size: 100%;
+  height: 40px;
+  margin: 10px 20px;
+  transition: transform 0.1s ease-in-out;
+}
+.socialLinks img:hover {
+  transform: scale(1.1);
+}
+
+.copyright {
+  color: gray;
+  text-align: center;
+  font-size: 2vh;
+}
+
+.question {
+  font-weight: 400;
+  color: whitesmoke;
+}
+.emailBtn {
+  cursor: pointer;
+  font-size: clamp(1rem, 3vh, 3vh);
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  color: whitesmoke;
+  padding: 10px 20px;
+  border: 2px solid white;
+}

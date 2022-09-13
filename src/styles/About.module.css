@@ -1,0 +1,74 @@
+.container {
+  height: 90vh;
+  width: 100%;
+  background: rgb(1, 192, 173);
+  background: linear-gradient(
+    167deg,
+    rgba(1, 192, 173, 1) 20%,
+    rgba(0, 221, 199, 1) 46%
+  );
+  clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
+  margin-bottom: 20vh;
+}
+.title {
+  color: white;
+  text-align: center;
+}
+.profile {
+  size: 100%;
+  height: 300px;
+  margin: 5% 0 -10% -10%;
+  border: 3px solid #038376;
+  border-radius: 10px;
+}
+.profileContainer {
+  height: 300px;
+  width: 290px;
+  border-top: 5px solid white;
+  border-right: 5px solid white;
+  margin: 5% 0 10% 10%;
+}
+.pageContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.infoContainer {
+  margin-top: 10px; 
+  width: clamp(20vh, 800px, 800px);
+}
+.info {
+  color: whitesmoke;
+}
+.infoBtn {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  color: white;
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  border-radius: 5px;
+  height: 5vh;
+  font-size: 2vh;
+  margin-top: 20px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1000px) {
+  .pageContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .container {
+    height: fit-content;
+    clip-path: none;
+  }
+  .infoContainer{
+    width: 100%;
+  }
+  .info{
+    font-size: 16px;
+    padding: 0 20px;
+  }
+}
